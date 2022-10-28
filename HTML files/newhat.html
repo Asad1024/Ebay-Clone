@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/7ce8132842.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+    <style>
+        .small-img-group{
+            display: flex;
+            justify-content: space-between;
+        }
+        .small-img-col{
+            flex-basis: 24%;
+            cursor: pointer;
+        }
+        .sproduct select{
+            display: block;
+            padding: 5px 10px;
+        }
+        .sproduct input{
+            width: 50px;
+            height: 40px;
+            padding-left: 10px;
+            margin-right: 10px;
+            font-size: 16px;
+        }
+        .sproduct input:focus{
+            outline: none;
+        }
+        .buy-btn{
+            background: coral;
+            opacity: 1;
+            transition: 0.3s ease;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- Nevigation -->
+    <nav class="navbar navbar-expand-lg navabr-light bg-white py-3 fixed-top">
+      <div class="container">
+        <a href="index.html"><img src="img/logo3.png" alt="" /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span><i id="bar" class="fas fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+           
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="shop.html">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#footer">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <i class="fas fa-search"></i>
+                <i class="fas fa-shopping-bag"></i>
+              </li>   
+        </div>
+      </div>
+    </nav>
+    <!-- Details -->
+      <section class="container sproduct my-5 pt-5">
+        <div class="row mt-5">
+            <div class="col-lg-5 col-md-12 col-12">
+                <img class="img-fluid w-100 pb-1" src="img/featured/4.jpg" id="mainImage" alt="">
+                <div class="small-img-group">
+                    <div class="small-img-col">
+                        <img src="img/featured/4.jpg" width="100%" class="small-img"  alt="">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="img/shop/5.jpg" width="100%" class="small-img"  alt="">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="img/shop/11.jpg" width="100%" class="small-img"  alt="">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="img/shop/15.jpg" width="100%" class="small-img"  alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-12">
+                <h6>Best Hats</h6>
+                <h3 class="py-4">Best Hat's</h3>
+                <h2>$1.33</h2>
+                <select class="my-3">
+                    <option>Select Size</option>
+                    <option>XL</option>
+                    <option>XXL</option>
+                    <option>Small</option>
+                    <option>Large</option>
+                </select>
+                <input type="number" value="1">
+                <button class="buy-btn">Add To Cart</button>
+                <h4 class="mt-5 mb-5">Product Details</h4>
+                <p>
+                    <span>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit sapiente magni expedita asperiores animi, provident suscipit est at. Suscipit a sequi saepe harum, praesentium explicabo fugit voluptas ipsam temporibus blanditiis?
+                    </span>
+                </p>
+            </div>
+        </div>
+       
+      </section>
+    <!-- Featured -->
+    <section id="featured" class="my-5 pb-5 ">
+      <div class="container text-center mt-5 py-5">
+          <h3>Our Featured</h3>
+          <hr class="mx-auto">
+          <p>Here you can check out our latest products with fiar prices om rymo</p>
+      </div>
+      <div class="row mx-auto container-fluid">
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+              <a href="newshoes.html"><img class="img-fluid mb-3" src="img/featured/1.jpg" alt=""></a>
+              <div class="star">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+              </div>
+              <h5 class="p-name">Sport Boots</h5>
+              <h4 class="p-price">$92</h4>
+              <button class="buy-btn">Buy Now</button>
+          </div>
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+              <a href="newshoes.html"><img class="img-fluid mb-3" src="img/featured/2.jpg" alt=""></a>
+              <div class="star">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+              </div>
+              <h5 class="p-name">Sport Boots</h5>
+              <h4 class="p-price">$52.</h4>
+              <button class="buy-btn">Buy Now</button>
+
+          </div>
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+              <a href="newbag.html"><img class="img-fluid mb-3" src="img/featured/3.jpg" alt=""></a>
+              <div class="star">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+              </div>
+              <h5 class="p-name">Sport Boots</h5>
+              <h4 class="p-price">$92.00</h4>
+              <button class="buy-btn">Buy Now</button>
+
+          </div>
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+              <a href="newhat.html"><img class="img-fluid mb-3" src="img/featured/4.jpg" alt=""></a>
+              <div class="star">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+              </div>
+              <h5 class="p-name">Sport Boots</h5>
+              <h4 class="p-price">$92.00</h4>
+              <button class="buy-btn">Buy Now</button>
+
+          </div>
+      </div>
+  </section>
+      <!-- Footer -->
+    <footer class="mt-5 py-5" id="footer">
+      <div class="row container mx-auto pt-5">
+          <div class="footer-one col-lg-3 col-md-6 col-12 ">
+              <img src="img/logo3.png" alt="">
+              <p class="pt-3">eBay Inc. is an American multinational e-commerce company based in San Jose, California, that facilitates consumer-to-consumer and business-to-consumer sales through its website. eBay was founded by Pierre Omidyar in 1995 and became a notable success story of the dot-com bubble.</p>
+          </div>
+          <div class="footer1 col-lg-3 col-md-6 col-12 mb-3">
+              <h5 class="pb-2">Featured</h5>
+              <ul class="text-uppercase list-unstyled">
+                  <li class="dc"><a href="">Men</a></li>
+                  <li><a href="">Wonen</a></li>
+                  <li><a href="">Boys</a></li>
+                  <li><a href="">Girls</a></li>
+                  <li><a href="">New Arrivals</a></li>
+                  <li><a href="">shoes</a></li>
+                  <li><a href="">clothes</a></li>
+              </ul>
+          </div>
+          <div class="footer1 col-lg-3 col-md-6 col-12 mb-3">
+              <h5 class="pb-2">Contact Us</h5>
+                <div class="text-uppercase">
+                  <h6>Address</h6>
+                  <p>Faisal Colony , Street# 3 , Bwp</p>
+                </div>
+                <div class="text-uppercase">
+                  <h6>Phone</h6>
+                  <p>+92 123456 789</p>
+                </div>
+                <div class="text-uppercase">
+                  <h6>Email</h6>
+                  <p>rymostore@gmail.com</p>
+                </div>
+          </div>
+          <div class="footer1 col-lg-3 col-md-6 col-12 ">
+              <h5 class="pb-2">Instagram</h5>
+             <div class="row">
+              <img class="img-fluid w-25 h-100 m-2" src="img/insta/1.jpg" alt="">
+              <img class="img-fluid w-25 h-100 m-2" src="img/insta/2.jpg" alt="">
+              <img class="img-fluid w-25 h-100 m-2" src="img/insta/3.jpg" alt="">
+              <img class="img-fluid w-25 h-100 m-2" src="img/insta/4.jpg" alt="">
+              <img class="img-fluid w-25 h-100 m-2" src="img/insta/5.jpg" alt="">
+  
+             </div>
+      </div>
+      </div>
+      <div class="copyright mt-5">
+          <div class="row container mx-auto">
+              <div class="col-lg-3 col-md-6 col-12 mb-4">
+                  <img src="img/payment.png" alt="">
+              </div>
+              <div class="col-lg-4 col-md-6 col-12 text-nowrap mb-2">
+                  <p>rymo Ecommerce Ⓒ 2022. All Rights Reserved</p>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12">
+                  <a href=""><i class="fab fa-facebook"></i></a>
+                  <a href=""><i class="fab fa-twitter"></i></a>
+                  <a href=""><i class="fab fa-linkedin-in"></i></a>
+              </div>
+          </div>
+
+      </div>
+  </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+        let mainImage = document.getElementById("mainImage");
+let smallImage = document.getElementsByClassName("small-img");
+
+smallImage[0].onclick = function () {
+  mainImage.src = smallImage[0].src;
+};
+
+smallImage[1].onclick = function () {
+  mainImage.src = smallImage[1].src;
+};
+
+smallImage[2].onclick = function () {
+  mainImage.src = smallImage[2].src;
+};
+
+smallImage[3].onclick = function () {
+  mainImage.src = smallImage[3].src;
+};
+
+    </script>
+  </body>
+</html>
